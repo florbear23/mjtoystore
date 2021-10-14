@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="index.css">
+    <title>TOY STORE</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
+            <div class="content">
+                <a href="#">BOYS</a>
+                <a href="#">GURLS</a>
+                <a href="#">BRAND</a>
+                <a href="#">FEATURES</a>
+            </div>
+            <div class="icon-container">
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+            </div>
+        </nav>
+    </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">BOYS</a>
+                    <a href="#">GURLS</a>
+                    <a href="#">BRAND</a>
+                    <a href="#">FEATURES</a>
+                  </div>
+                 </div>
+                <div class="lalagyanan">
+                    <div class="slider">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                            <img src="img/banner-sell-1.jpg" >
+                            </div>
+                            <div class="mySlides fade">
+                            <img src="img/banne-sell-2.jpg" >
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                    <div class="lalagyanan-nang">
+                       <div class="category">
+                            <div class="lalagyan-title">
+                                <p> <b style="color: #FD778E;">CATEGORY</b>  BY THE AGE</p>
+                            </div>
+                            <div class="tatsulok"><P>0-24</P><p>Months</p></div>
+                            <div class="tatsulok" style="background-color:#FD778E;"><P>3-7</P><p>Years</p></div>
+                            <div class="tatsulok" style="background-color:#73F69A;"><P>8-12</P><p>Years</p></div>
+                            <div class="tatsulok" style="background-color:#FFCA73;"><P>13-plus</P><p>Years</p>/div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-area">
+                            <div class="lalagyan-title">
+                                <p > <b style="color: #FD778E;">New</b>  Arrival</p>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/action-2.png" alt="">
+                                </div>
+                                <p class="card-name"> Transformer</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/Action-1.png" alt="">
+                                </div>
+                                <p class="card-name"> Doreamon and Friends</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/action-3.png" alt="">
+                                </div>
+                                <p class="card-name"> Zoids</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/action-figure.jpg" alt="">
+                                </div>
+                                <p class="card-name"> T-shirt</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/card-game.jpg" alt="">
+                                </div>
+                                <p class="card-name"> T-shirt</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/game-console.jpg" alt="">
+                                </div>
+                                <p class="card-name"> T-shirt</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/card-game-1.png" alt="">
+                                </div>
+                                <p class="card-name"> Deck box</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                            <div class="item-card">
+                                <div class="card-img">
+                                    <img src="img/action-figure.jpg" alt="">
+                                </div>
+                                <p class="card-name"> T-shirt</p>
+                                <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus libero vitae similique porro saepe recusandae.</p>
+                                <div class="button-view"><button>view</button></div>
+                                <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="main-footer">
+                            <div class="footer-info">
+                                <h2 class="subtitle">Link</h2>
+                                <ul class="menu-list">
+                                    <li><a>BOYS</a></li>
+                                    <li><a>GURLS</a></li>
+                                    <li><a>BRAND</a></li>
+                                    <li><a>FEATURES</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-info">
+                                <h2 class="subtitle">Category</h2>
+                                <ul class="menu-list">
+                                    <li><a>BOYS</a></li>
+                                    <li><a>GURLS</a></li>
+                                    <li><a>BRAND</a></li>
+                                    <li><a>FEATURES</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-info">
+                                <h2 class="subtitle">About</h2>
+                               <div><img class="footer-logo" src="img/hobby-shop.jpg" alt=""></div> 
+                            </div>
+                        </div>
+                        <div class="copy-right">
+                            <p>Copyright ©2021 mj-design. All rights reserved.</p>
+                        </div>
+                    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+
+<script src="main.js"></script>
+</html>
