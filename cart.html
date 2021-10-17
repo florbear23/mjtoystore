@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
+            <div class="content">
+              <a href="index.html">HOME</a>
+              <a href="shop.html">SHOP</a>
+              <a href="#">ABOUT</a>
+              <a href="#">CONTACT</a>
+            </div>
+            <div class="icon-container">
+              <a href="#" class="icon"><i class="fas fa-user"></i></a>
+              <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+              <a href="#" class="icon"><i class="fas fa-search"></i></a>
+            </div>
+        </nav>
+    </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">BOYS</a>
+                    <a href="#">GURLS</a>
+                    <a href="#">BRAND</a>
+                    <a href="#">FEATURES</a>
+                  </div>
+                 </div> 
+
+
+
+
+
+                 <div class="main-container">
+
+
+                    <div class="item-list">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Product Image</th>
+                                <th>Product Name</th>
+                                <th>Price</abbr></th>
+                                <th>QTY</abbr></th>
+                                <th>ToTal Price</th>
+                              </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                  <th></th>
+                                  <th></th>
+                                  <th></th>
+                                  <th></th>
+                                  <th>Main Total:₱2800</th>
+                                </tr>
+                              </tfoot>
+                            <tbody>
+                              <tr>
+                                <td><img src="img/Action-1.png" alt=""></td>
+                                <td>Doreamon  and Friends</td>
+                                <td>₱800</td>
+                                <td>1</td>
+                                <td>₱800</td>
+                              </tr>
+                              <tr>
+                                <td><img src="img/Action-2.png" alt=""></td>
+                                <td>Transformer</td>
+                                <td>₱1000</td>
+                                <td>2</td>
+                                <td>₱2000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="item-total">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Product Name</th>
+                                <th>Price</abbr></th>
+                              </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                  <th></th>
+                                  <th>Main Total:₱2800</th>
+                                </tr>
+                              </tfoot>
+                            <tbody>
+                              <tr>
+                                <td>Doreamon  and Friends</td>
+                                <td>₱800</td>
+                              </tr>
+                              <tr>
+                                <td>Transformer</td>
+                                <td>₱1000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="btn-container"><button>  Check Out</button></div>
+                    </div>
+                 </div>
+
+
+
+                  <div style="margin-top: 1000px;"></div>
+                  <footer>
+                    <div class="main-footer">
+                        <div class="footer-info">
+                            <h2 class="subtitle">Link</h2>
+                            <ul class="menu-list">
+                                <li><a>BOYS</a></li>
+                                <li><a>GURLS</a></li>
+                                <li><a>BRAND</a></li>
+                                <li><a>FEATURES</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info">
+                            <h2 class="subtitle">Category</h2>
+                            <ul class="menu-list">
+                                <li><a>BOYS</a></li>
+                                <li><a>GURLS</a></li>
+                                <li><a>BRAND</a></li>
+                                <li><a>FEATURES</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info">
+                            <h2 class="subtitle">About</h2>
+                           <div><img class="footer-logo" src="img/hobby-shop.jpg" alt=""></div> 
+                        </div>
+                    </div>
+                    <div class="copy-right">
+                        <p>Copyright ©2021 mj-design. All rights reserved.</p>
+                    </div>
+                </footer>
+    
+
+
+</body>
+<script src="main.js"></script>
+</html>

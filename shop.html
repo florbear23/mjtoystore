@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>hobby-shop</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
+            <div class="content">
+                <a href="index.html">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="icon-container">
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+            </div>
+        </nav>
+    </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">BOYS</a>
+                    <a href="#">GURLS</a>
+                    <a href="#">BRAND</a>
+                    <a href="#">FEATURES</a>
+                  </div>
+                 </div>
+                 
+                 <div class="main-container">
+                    <div class="side-button " id="myBtnContainer">
+                        <p>Category Filter</p>
+                        <button class="btn1 active" onclick="filterSelection('all')">ALL TOYS</button>
+                        <button class="btn1 " onclick="filterSelection('boys')">BOYS</button>
+                        <button class="btn1 " onclick="filterSelection('gurls')">GURLS</button>
+                        <button class="btn1 " onclick="filterSelection('brand')">BRAND</button>
+                        <button class="btn1 " onclick="filterSelection('features')">FEATURES</button>
+                    </div>
+                    <div class="main-area ">
+                        <div class="item-card boys">
+                            <div class="card-img">
+                                <img src="img/action-3.png" alt="">
+                            </div>
+                            <p class="card-name"> Zoids</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card gurls boys">
+                            <div class="card-img">
+                                <img src="img/action-figure.jpg" alt="">
+                            </div>
+                            <p class="card-name"> T-shirt</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card brand features boys gurls">
+                            <div class="card-img">
+                                <img src="img/card-game.jpg" alt="">
+                            </div>
+                            <p class="card-name"> T-shirt</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card boys brand features">
+                            <div class="card-img">
+                                <img src="img/game-console.jpg" alt="">
+                            </div>
+                            <p class="card-name"> T-shirt</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card gurls brand features">
+                            <div class="card-img">
+                                <img src="img/card-game-1.png" alt="">
+                            </div>
+                            <p class="card-name"> Deck box</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card boys features">
+                            <div class="card-img">
+                                <img src="img/action-figure.jpg" alt="">
+                            </div>
+                            <p class="card-name"> T-shirt</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card boys brand features">
+                            <div class="card-img">
+                                <img src="img/action-3.png" alt="">
+                            </div>
+                            <p class="card-name"> Zoids</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card boys features">
+                            <div class="card-img">
+                                <img src="img/action-figure.jpg" alt="">
+                            </div>
+                            <p class="card-name"> T-shirt</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card boys brand features">
+                            <div class="card-img">
+                                <img src="img/card-game.jpg" alt="">
+                            </div>
+                            <p class="card-name"> T-shirt</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                    </div>
+                    <div id="mySidenav" class="sidenav">
+                                <div class="side-button2 " id="myBtnContainer">
+                                    <p>Category Filter</p>
+                                    <button class="btn1 active" onclick="filterSelection('all')">ALL TOYS</button>
+                                    <button class="btn1 " onclick="filterSelection('boys')">BOYS</button>
+                                    <button class="btn1 " onclick="filterSelection('gurls')">GURLS</button>
+                                    <button class="btn1 " onclick="filterSelection('brand')">BRAND</button>
+                                    <button class="btn1 " onclick="filterSelection('features')">FEATURES</button>
+                                    <button class="btn1 " style="background-color: red; color: #fff;" onclick="closenNav()">Close Button</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-filter">
+                            <div class="button-area"><button onclick="opennNav() ">filter-menu</button></div>
+                            <div class="button-area"><button>Home</button></div>
+                            <div class="button-area"><button>Top-up</button></div>
+                        </div> 
+                        <div style="margin-top: 1000px;"></div>
+                        <footer>
+                            <div class="main-footer">
+                                <div class="footer-info">
+                                    <h2 class="subtitle">Link</h2>
+                                    <ul class="menu-list">
+                                        <li><a>BOYS</a></li>
+                                        <li><a>GURLS</a></li>
+                                        <li><a>BRAND</a></li>
+                                        <li><a>FEATURES</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-info">
+                                    <h2 class="subtitle">Category</h2>
+                                    <ul class="menu-list">
+                                        <li><a>BOYS</a></li>
+                                        <li><a>GURLS</a></li>
+                                        <li><a>BRAND</a></li>
+                                        <li><a>FEATURES</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-info">
+                                    <h2 class="subtitle">About</h2>
+                                <div><img class="footer-logo" src="img/hobby-shop.jpg" alt=""></div> 
+                                </div>
+                            </div>
+                            <div class="copy-right">
+                                <p>Copyright ©2021 mj-design. All rights reserved.</p>
+                            </div>
+                        </footer>           
+
+
+                 
+</body>
+<script src="main.js"></script>
+
+       
+</html>

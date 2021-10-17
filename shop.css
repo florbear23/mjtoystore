@@ -1,0 +1,329 @@
+
+:root{
+    --border:3px black solid;
+    --button:#FFCA73;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("img/lego.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-container{
+    max-width: 1240px;
+    max-height: 10000px;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.side-button{
+    max-width: 200px;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin: 10px auto;
+    border: var(--border);
+    background-color: lightgrey;
+}
+.side-button2{
+  max-width:100%;
+  width: 100%;
+  max-height: 400px;
+  height: 400px;
+  margin: 10px auto;
+  border: var(--border);
+  background-color: lightgrey;
+}
+.side-button p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.side-button button{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.side-button2 p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.side-button2 button{
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+}
+.main-area{
+    max-width: 1000px;
+    width: 100%;
+    max-height: 4000px;
+    height: 400px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.item-card{
+    display: none; /* Hidden by default kailangan to gagawa kanang porfolio grid */
+    max-width: 280px;
+    width: 280px;
+    max-height: 500px;
+    height: 450px;
+    margin: 10px auto;
+    border: var(--border);
+    border-radius: 15px;
+    background-color: var(--card);
+  }
+  .card-img{
+    max-width: 272px;
+    width: 280px;
+    max-height: 180px;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .card-img img{
+    max-width: 260px;
+    width: 280px;
+    max-height: 178px;
+    height: 100%;
+  }
+  .card-name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .card-info{
+    text-align: center;
+    font-size: 14px;
+    margin: 0 20px;
+  }
+  .button-view{
+    max-width: 190px;
+    width: 220px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 10px auto;
+  }
+  .button-view button{
+    background-color: var(--button);
+    color: white;
+    width: 190px;
+    height: 40px;
+    margin:  0 auto;
+    border-radius: 15px;
+    border: none;
+  }
+  .button-cart{
+    max-width: 190px;
+    width: 220px;
+    height: 40px;
+    margin: 10px auto;
+    color: #fff;
+  }
+  .button-cart button{
+    background-color:darkblue;
+    color: white;
+    width: 190px;
+    height: 40px;
+    margin:  0 auto;
+    border-radius: 15px;
+    border: none;
+  }
+  /* itong show nato dapat lagi ito nasa dulo para gumana */
+  .show {
+    display: block;
+  }
+  .menu-filter{
+    max-width: 100%;
+    width: 100%;
+    max-height: 60px;
+    height: 60px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    display: none;
+  }
+  .button-area{
+    max-width: 245px;
+    width: 400px;
+    height:40px;
+    margin: 0  auto;
+  }
+  .button-area button{
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+  }
+  .sidenav {
+    max-height: 500px;
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    left: 10px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  @media only screen and (max-width: 1239px){
+    .main-container{
+      max-width: 1024px;
+      max-height: 4000px;
+    } 
+    .side-button{
+      max-width: 180px;
+    }
+    .main-area{
+      max-width: 770px;
+    }
+    .item-card{
+      max-width: 230px;
+    }
+    .card-img{
+      max-width: 200px
+    }
+    .card-img img{
+      max-width: 200px
+    }
+  }
+  @media only screen and (max-width: 1023px){
+    .main-container{
+      max-width: 768px;
+      max-height: 4000px;
+    } 
+    .main-area{
+      height: auto;
+    }
+
+    .side-button{
+      display: none;
+    }
+    .menu-filter{
+      display: flex;
+      position: fixed;
+      bottom: 0;
+    }
+    .button-area{
+      max-width: 250px;
+    }
+  }
+  @media only screen and (max-width: 767px){
+  
+    .main-container{
+      max-width: 601px;
+      max-height: 4000px;
+    } 
+    .item-card{
+      max-width: 190px;
+    }
+    .card-img{
+      max-width: 180px;
+    }
+    .card-img img{
+      max-width: 180px;
+    }
+    .button-view{
+      max-width: 150px;
+    }
+    .button-view button{
+      max-width: 150px;
+    }
+    .button-cart{
+      max-width: 150px;
+    }
+    .button-cart button{
+      width: 150px;
+    }
+    .button-area{
+      max-width: 200px;
+      height: 40px;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .main-container{
+      max-width: 380px;
+      max-height: 4000px;
+    } 
+    .item-card{
+      max-width: 180px;
+    }
+    .card-img{
+      max-width: 165px;
+      max-height: 140px;
+    }
+    .card-img img{
+      max-width: 160px;
+      max-height: 140px;
+    }
+    .button-area{
+      max-width: 120px;
+      height: 40px;
+    }
+  }
+  @media only screen and (max-width: 379px){
+    .main-container{
+      max-width: 320px;
+      max-height: 4000px;
+    } 
+    .item-card{
+      max-width: 150px;
+    }
+    .card-img{
+      max-width: 130px;
+      max-height: 140px;
+    }
+    .card-img img{
+      max-width: 130px;
+      max-height: 130px;
+    }
+    .button-view{
+      max-width: 130px;
+    }
+    .button-view button{
+      max-width: 130px;
+    }
+    .button-cart{
+      max-width: 130px;
+    }
+    .button-cart button{
+      width: 130px;
+    }
+    .button-area{
+      max-width: 100px;
+      height: 40px;
+    }
+  }
+  @media only screen and (max-width: 319px){
+    .item-card{
+      max-width: 140px;
+      height: auto;
+    }
+    .button-view{
+      max-width: 120px;
+    }
+    .button-view button{
+      max-width: 120px;
+    }
+    .button-cart{
+      max-width: 120px;
+    }
+    .button-cart button{
+      width: 120px;
+    }
+  }

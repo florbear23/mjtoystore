@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="info-toy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Shop Infomation</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
+            <div class="content">
+                <a href="index.html">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="icon-container">
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+            </div>
+        </nav>
+    </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">BOYS</a>
+                    <a href="#">GURLS</a>
+                    <a href="#">BRAND</a>
+                    <a href="#">FEATURES</a>
+                  </div>
+                 </div> 
+                 <div class="main-container">
+                    <div class="img-container">
+                        <div class="img-selection">
+                            <div class="selection">
+                                <img class="selec-img" src="img/game-console.jpg" alt="gameconsole" onclick="myFunction(this);">
+                            </div>
+                            <div class="selection">
+                                <img class="selec-img" src="img/card-game.jpg" alt="gameconsole" onclick="myFunction(this);">
+                            </div>
+                            <div class="selection">
+                                <img class="selec-img" src="img/action-figure.jpg" alt="gameconsole" onclick="myFunction(this);">
+                            </div>
+                        </div>
+                        <div class="img-main">
+                           <img id="expandedImg" class="main-img"alt="" src="img/hobby-shop.jpg">
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <p class="title">T-shirt Cartoons</p>
+                        <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Quibusdam, nulla provident! Accusamus laudantium soluta 
+                         tenetur molestias modi adipisci ratione atque!</p>
+                         <p class="price">₱500</p>
+                         <div class="bts-con">
+                             <button>ADD To CART</button>
+                         </div>
+                    </div>
+                    <div class="tab-info">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'information')">Others Infomation</button>
+                            <button class="tablinks" onclick="openCity(event, 'comment')">Comment</button>
+                            <button class="tablinks" onclick="openCity(event, 'rate')">Rate</button>
+                          </div>
+                          <div id="information" class="tabcontent">
+                            <h3>Others Infomation</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est id at similique excepturi nulla temporibus?</p>
+                          </div>
+                          <div id="comment" class="tabcontent">
+                            <h3>Comment</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur amet esse est autem dolores similique.</p>
+                          </div>
+                          <div id="rate" class="tabcontent">
+                            <h3>Rate</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quia optio quis dolor, perspiciatis eligendi.</p>
+                          </div>
+                    </div>
+                    <div class="related-area">
+                        <div class="item-card">
+                            <div class="card-img">
+                                <img src="img/action-2.png" alt="">
+                            </div>
+                            <p class="card-name"> Transformer</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card">
+                            <div class="card-img">
+                                <img src="img/Action-1.png" alt="">
+                            </div>
+                            <p class="card-name"> Doreamon and Friends</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card">
+                            <div class="card-img">
+                                <img src="img/action-3.png" alt="">
+                            </div>
+                            <p class="card-name"> Zoids</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                        <div class="item-card">
+                            <div class="card-img">
+                                <img src="img/action-figure.jpg" alt="">
+                            </div>
+                            <p class="card-name"> T-shirt</p>
+                            <p class="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloribus libero vitae similique porro saepe recusandae.</p>
+                            <div class="button-view"> <a href="info-toy.html" ><button>View</button></a></div>
+                            <div class="button-cart" onclick="order()"><button>Add To Cart</button></div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             
+                <!-- <div style="margin-top: 1000px;"></div> -->
+                 <footer>
+                    <div class="main-footer">
+                        <div class="footer-info">
+                            <h2 class="subtitle">Link</h2>
+                            <ul class="menu-list">
+                                <li><a>BOYS</a></li>
+                                <li><a>GURLS</a></li>
+                                <li><a>BRAND</a></li>
+                                <li><a>FEATURES</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info">
+                            <h2 class="subtitle">Category</h2>
+                            <ul class="menu-list">
+                                <li><a>BOYS</a></li>
+                                <li><a>GURLS</a></li>
+                                <li><a>BRAND</a></li>
+                                <li><a>FEATURES</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-info">
+                            <h2 class="subtitle">About</h2>
+                           <div><img class="footer-logo" src="img/hobby-shop.jpg" alt=""></div> 
+                        </div>
+                    </div>
+                    <div class="copy-right">
+                        <p>Copyright ©2021 mj-design. All rights reserved.</p>
+                    </div>
+                </footer>
+
+</body>
+<script src="main.js"></script>
+</html>
