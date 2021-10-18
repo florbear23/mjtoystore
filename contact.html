@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>contact</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
+            <div class="content">
+                <a href="index.html">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <div class="icon-container">
+                <a href="user.html" class="icon"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="icon" ><i class="fas fa-search" onclick="openSearch()" ></i></a>
+            </div>
+        </nav>
+    </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">HOME</a>
+                    <a href="shop.html">SHOP</a>
+                    <a href="#">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                  </div>
+                 </div>
+                 <div id="myOverlay" class="bukas">
+                    <span class="sarado" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                      </form>
+                    </div>
+                  </div>
+                 <div class="main-container">
+                   
+                    <form action="">
+                        <div class="input-area">
+                            <p>Send Us A Message</p>
+                        </div>
+                        <div class="input-area">
+                             <label for="">Full Name</label>
+                             <input type="text">
+                        </div>
+                        <div class="input-area">
+                            <label for="">Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="input-area">
+                            <label for="">About</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-area">
+                            <label for="">Message</label>
+                            <textarea placeholder="Write something.." ></textarea>
+
+                        </div>
+                        <div class="btnn">
+                            <button type="submit">Submit</button>
+                        </div>
+                     </form>
+                    
+                    <div class="contact-info">
+                        <div class="input-area">
+                            <p>Get Office Information</p>
+                        </div>
+                        <div class="info-area">
+                            <div class="icon-con"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="information"><P><b>addres:</b>  undecided area manila makati</P></div>
+                        </div>
+                        <div class="info-area">
+                            <div class="icon-con"><i class="fas fa-envelope"></i></div>
+                            <div class="information"><p><b>Email:</b> undecided@gmail.com</p></div>
+                        </div>
+                        <div class="info-area">
+                            <div class="icon-con"><i class="fas fa-phone-square-alt"></i></div>
+                            <div class="information"> <p> <b>Phone:</b> 0918xxx-xxx-xx</p> </div>
+                        </div>
+                        <div class="info-area">
+                            <div class="icon-con"><i class="far fa-clock"></i></div>
+                            <div class="information"><p> <b> Time:</b>  any time Free To Go !! to Office To Inquire</p></div>
+                        </div>
+                    </div>
+                        
+                 </div>
+
+
+
+
+
+                 <div style="margin-top: 300px;"></div>
+                 <footer>
+                   <div class="main-footer">
+                       <div class="footer-info">
+                           <h2 class="subtitle">Link</h2>
+                           <ul class="menu-list">
+                               <li><a>BOYS</a></li>
+                               <li><a>GURLS</a></li>
+                               <li><a>BRAND</a></li>
+                               <li><a>FEATURES</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-info">
+                           <h2 class="subtitle">Category</h2>
+                           <ul class="menu-list">
+                               <li><a>BOYS</a></li>
+                               <li><a>GURLS</a></li>
+                               <li><a>BRAND</a></li>
+                               <li><a>FEATURES</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-info">
+                           <h2 class="subtitle">About</h2>
+                          <div><img class="footer-logo" src="img/hobby-shop.jpg" alt=""></div> 
+                       </div>
+                   </div>
+                   <div class="copy-right">
+                       <p>Copyright ©2021 mj-design. All rights reserved.</p>
+                   </div>
+               </footer> 
+</body>
+<script src="main.js"></script>
+</html>

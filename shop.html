@@ -18,24 +18,32 @@
                 <a href="index.html">HOME</a>
                 <a href="shop.html">SHOP</a>
                 <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+                <a href="contact.html">CONTACT</a>
             </div>
             <div class="icon-container">
-                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <a href="user.html" class="icon"><i class="fas fa-user"></i></a>
                 <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon" ><i class="fas fa-search" onclick="openSearch()" ></i></a>
             </div>
         </nav>
     </div>
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="sarado" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
                     <a href="index.html">HOME</a>
                     <a href="shop.html">SHOP</a>
                     <a href="#">ABOUT</a>
-                    <a href="#">CONTACT</a>
+                    <a href="contact.html">CONTACT</a>
                   </div>
                  </div>
+                 <div id="myOverlay" class="bukas">
+                    <span class="sarado" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                      </form>
+                    </div>
+                  </div>
                  
                  <div class="main-container">
                     <div class="side-button " id="myBtnContainer">

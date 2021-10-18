@@ -11,39 +11,40 @@
     <title>Cart</title>
 </head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
-            <div class="content">
-              <a href="index.html">HOME</a>
-              <a href="shop.html">SHOP</a>
-              <a href="#">ABOUT</a>
-              <a href="#">CONTACT</a>
-            </div>
-            <div class="icon-container">
-              <a href="#" class="icon"><i class="fas fa-user"></i></a>
-              <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
-              <a href="#" class="icon"><i class="fas fa-search"></i></a>
-            </div>
-        </nav>
-    </div>
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="nav-container">
+    <nav>
+        <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
+        <div class="content">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="#">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="icon-container">
+            <a href="user.html" class="icon"><i class="fas fa-user"></i></a>
+            <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="icon" ><i class="fas fa-search" onclick="openSearch()" ></i></a>
+        </div>
+    </nav>
+</div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="sarado" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+              </div>
+             </div>
+             <div id="myOverlay" class="bukas">
+                <span class="sarado" onclick="closeSearch()" title="Close Overlay">×</span>
                 <div class="overlay-content">
-                  <a href="index.html">HOME</a>
-                  <a href="shop.html">SHOP</a>
-                  <a href="#">ABOUT</a>
-                  <a href="#">CONTACT</a>
-                  </div>
-                 </div> 
-
-
-
-
-
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                  </form>
+                </div>
+              </div>
                  <div class="main-container">
-
-
                     <div class="item-list">
                         <table class="table">
                             <thead>
@@ -107,12 +108,9 @@
                               </tr>
                             </tbody>
                           </table>
-                          <div class="btn-container"><button>  Check Out</button></div>
+                          <div class="btn-container"><a href="process.html"><button>  Check Out</button></a></div>
                     </div>
                  </div>
-
-
-
                   <div style="margin-top: 1000px;"></div>
                   <footer>
                     <div class="main-footer">

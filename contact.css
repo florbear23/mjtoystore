@@ -1,0 +1,268 @@
+:root{
+    --main-color:rgb(35, 154, 201) ;
+    --card:#fff;
+    --green:#73F69A;
+    --button:#f0b351;
+    --border:3px black solid;
+    --pink:pink;
+}
+body{
+    background-image: url("img/lego.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.main-container{
+    max-width: 1240px;
+    max-height: 4000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto !important;
+   
+}   
+
+.main-container form{
+    max-width: 500px;
+    width: 100%;
+    max-height: 4000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto !important;
+    background-color: var(--main-color);
+    color: var(--card);
+}
+.input-area{
+    max-width: 100%;
+    width: 100%;
+    max-height: 4000px;
+    height: auto;
+    margin: 5px 10px;
+   
+}
+.input-area label{
+    font-size: 18px;
+    font-weight: bold;
+} 
+
+.input-area p {
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.input-area input[type=text],input[type=email]{
+
+    width: 100%;
+    height: 30px;
+}
+.input-area textarea{
+    width: 100%;
+    height: 100px;
+
+}
+.btnn{
+    max-width: 200px;
+    width: 100%;
+    max-height: 4000px;
+    height: 50px;
+    margin: 20px auto; 
+    border-radius: 15px;  
+}
+
+.btnn button{
+    width: 100%;
+    height: 100%; 
+    border-radius: 15px; 
+    background-color: var(--button);
+    color: var(--card);
+    font-weight: bold;
+}
+
+.contact-info{
+    max-width: 700px;
+    width: 100%;
+    max-height: 4000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto !important;
+    background-color: var(--main-color);
+    color: var(--card);
+}
+.info-area{
+    max-width: 680px;
+    width: 100%;
+    max-height: 4000px;
+    height: auto;
+    margin: 10px 20px;
+  
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto !important;
+}
+
+.information{
+    max-width: 500px;
+    width: 100%;
+    max-height: 4000px;
+    height: 30px;
+    margin: 10px auto;
+    margin: 10px auto !important;  
+}
+.icon-con{
+    max-width: 150px;
+    width: 100%;
+    max-height: 4000px;
+    height: auto;
+    margin: 10px auto !important;   
+}
+.icon-con i{
+   font-size: 40px;
+  float: right;
+   
+}
+@media only screen and (max-width: 1239px){
+    .main-container{
+      max-width: 1024px;
+      max-height: 4000px;
+    } 
+    form{
+      max-width: 400px;  
+      height: 500px;
+    }
+    .contact-info{
+      max-width: 600px;
+      height: 500px;  
+    }
+    .info-area{
+        max-width: 500px;
+    }
+    .information{
+        max-width: 350px;
+    }
+    .icon-con{
+        max-width: 130px;
+         
+    }
+  }
+  @media only screen and (max-width: 1023px){
+    .main-container{
+      max-width: 768px;
+      max-height: 4000px;
+      padding: 10px 40px; 
+    } 
+    form{
+        max-width: 100%;  
+        height: 500px;
+        order: 2;
+      }
+      .contact-info{
+        max-width: 100%;
+        height: 500px; 
+        order: 1; 
+      }
+      .info-area{
+          max-width: 500px;
+      }
+      .information{
+          max-width: 270px;
+      }
+      .icon-con{
+          max-width: 80px;
+           
+      }
+   
+
+  @media only screen and (max-width: 767px){
+  
+    .main-container{
+      max-width: 601px;
+      max-height: 4000px;
+    } 
+
+
+   
+  }
+  @media only screen and (max-width: 600px){
+    .main-container{
+      max-width: 380px;
+      max-height: 4000px;
+    } 
+   
+    .info-area{
+        max-width: 500px;
+    }
+    .information{
+        max-width: 190px;
+    }
+    .icon-con{
+        max-width: 80px;
+         
+    }
+  }
+  @media only screen and (max-width: 379px){
+    .main-container{
+      max-width: 320px;
+      max-height: 4000px;
+    } 
+   
+    .btnn{
+        max-width: 150px;
+        width: 100%;
+        max-height: 4000px;
+        height: 40px;
+        margin: 20px auto; 
+        border-radius: 15px;  
+    }
+
+    .information{
+        max-width: 150px;
+    }
+    .information p {
+        font-size: 12px;
+    }
+    .icon-con{
+        max-width: 50px;
+    }
+    .icon-con i{
+        font-size: 30px;
+       float: right;
+        
+     }
+
+  }
+  @media only screen and (max-width: 319px){
+  
+    .main-container{
+      max-width: 280px;
+      max-height: 4000px;
+     
+    } 
+   
+    .information{
+        max-width: 130px;
+    }
+    .information p {
+        font-size: 10px;
+    }
+    .icon-con{
+        max-width: 40px;
+    }
+    .icon-con i{
+        font-size: 30px;
+       float: right;
+        
+     }
+
+   
+  }
+  }
+
+

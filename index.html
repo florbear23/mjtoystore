@@ -18,24 +18,32 @@
                 <a href="index.html">HOME</a>
                 <a href="shop.html">SHOP</a>
                 <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+                <a href="contact.html">CONTACT</a>
             </div>
             <div class="icon-container">
-                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                <a href="user.html" class="icon"><i class="fas fa-user"></i></a>
                 <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon" ><i class="fas fa-search" onclick="openSearch()" ></i></a>
             </div>
         </nav>
     </div>
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="sarado" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
                     <a href="index.html">HOME</a>
                     <a href="shop.html">SHOP</a>
                     <a href="#">ABOUT</a>
-                    <a href="#">CONTACT</a>
+                    <a href="contact.html">CONTACT</a>
                   </div>
                  </div>
+                 <div id="myOverlay" class="bukas">
+                    <span class="sarado" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                      </form>
+                    </div>
+                  </div>
                 <div class="lalagyanan">
                     <div class="slider">
                         <div class="slideshow-container">
@@ -60,10 +68,18 @@
                             <div class="lalagyan-title">
                                 <p> <b style="color: #FD778E;">CATEGORY</b>  BY THE AGE</p>
                             </div>
-                            <div class="tatsulok"><P>0-24</P><p>Months</p></div>
-                            <div class="tatsulok" style="background-color:#FD778E;"><P>3-7</P><p>Years</p></div>
-                            <div class="tatsulok" style="background-color:#73F69A;"><P>8-12</P><p>Years</p></div>
-                            <div class="tatsulok" style="background-color:#FFCA73;"><P>13-plus</P><p>Years</p>/div>
+                            <div class="new-category" style="background: #fff url(img/0-24.jpg) center center/cover no-repeat; ">
+                            <div class="btn-cat"><button>0-24 monts</button></div>
+                            </div>
+                            <div class="new-category" style="background: #fff url(img/3-7.jpg) center center/cover no-repeat; ">
+                                <div class="btn-cat"><button>0-24 monts</button></div>
+                            </div>   
+                            <div class="new-category" style="background: #fff url(img/8-12.jpg) center center/cover no-repeat; ">
+                                <div class="btn-cat"><button>0-24 monts</button></div>
+                            </div>
+                            <div class="new-category" style="background: #fff url(img/13-up.jpg) center center/cover no-repeat; ">
+                                <div class="btn-cat"><button>0-24 monts</button></div>
+                            </div>
                         </div>
                     </div>
                     <div class="card-container">
@@ -185,4 +201,5 @@
 </body>
 
 <script src="main.js"></script>
+
 </html>

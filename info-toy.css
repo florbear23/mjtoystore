@@ -1,11 +1,18 @@
 :root{
-    --main-color:skyblue;
-    --border: 3px black solid;
+    --main-color:rgb(35, 154, 201) ;
+    --card:#fff;
+    --green:#73F69A;
     --button:#FFCA73;
-    --button1:pink;
-    --border1: 3px skyblue solid;
+    --border:3px black solid;
+    --border1: 3px rgb(35, 154, 201);
 }
-
+body{
+  background-image: url("img/lego.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .main-container{
     max-width: 1240px;
     width: 100%;
@@ -82,6 +89,7 @@
     max-height: 400px;
     height: 400px;
     margin: 5px auto;
+    background-color: var(--card);
 
 }
 
@@ -127,6 +135,7 @@
     height: 300px;
     margin: 5px auto;
     border: var(--border1);
+    background-color: var(--card);
 }
 
 
@@ -166,6 +175,7 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+   
   }
 
 .related-area{

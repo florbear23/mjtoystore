@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="process.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Process</title>
+</head>
+<body>
+  <div class="nav-container">
+    <nav>
+        <div class="logo"><span><i class="fas fa-bars" onclick="openNav()"></i></span> <h1> Logo</h1></div>
+        <div class="content">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="#">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="icon-container">
+            <a href="user.html" class="icon"><i class="fas fa-user"></i></a>
+            <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="icon" ><i class="fas fa-search" onclick="openSearch()" ></i></a>
+        </div>
+    </nav>
+</div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="#">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+              </div>
+             </div>
+             <div id="myOverlay" class="bukas">
+                <span class="sarado" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                  </form>
+                </div>
+              </div>
+                
+                <div class="main-container">
+                    <form action="">
+                        <div class="title-area">
+                            <p class="title-process">Shipping Address</p>
+                        </div>
+                        <div class="input-area">
+                            <label for="">Full Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-area">
+                            <label for="">Address</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-area">
+                            <label for="">Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="input-area">
+                            <label for="">Phone No.</label>
+                            <input type="text">
+                        </div>
+                        <div class="order-method">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Select Method</th>
+                                    <th>Price</th>
+                                    <th>Method Title</th>
+                                    <th>Carrier Title</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>₱500</td>
+                                    <td>Fixed</td>
+                                    <td>Flat Rate</td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                    <td>Free Shipping</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="payment-method">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Select Method</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="checkbox" ><abbr title=""></abbr> Cash On Delivery</td>
+                                  </tr>
+                                  <tr>
+                                    <td><input type="checkbox" ><abbr title=""></abbr> Bank Transfer Payment</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </form>
+                    <div class="summary-con">
+                        <div class="title-area"> <p class="title-process">ORDER SUMMARY</p></div>
+                        <div class="summary">
+                            <p class="data-summary">Cart Subtotal</p>
+                        </div>
+                        <div class="summary">
+                            <p class="data-summary">Shipping Flat Rate - Fixed</p>
+                        </div>
+                        <div class="summary">
+                            <p class="data-summary">Order Total</p>
+                        </div>
+                        <div class="summary">Ship To:</div>
+                        <div class="summary">Shipping Method:</div>
+                        <div class="btn-n"><Button>Process Now</Button></div>
+                    </div>
+                </div>
+                <div style="margin-top: 300px;"></div>
+                <footer>
+                  <div class="main-footer">
+                      <div class="footer-info">
+                          <h2 class="subtitle">Link</h2>
+                          <ul class="menu-list">
+                              <li><a>BOYS</a></li>
+                              <li><a>GURLS</a></li>
+                              <li><a>BRAND</a></li>
+                              <li><a>FEATURES</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer-info">
+                          <h2 class="subtitle">Category</h2>
+                          <ul class="menu-list">
+                              <li><a>BOYS</a></li>
+                              <li><a>GURLS</a></li>
+                              <li><a>BRAND</a></li>
+                              <li><a>FEATURES</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer-info">
+                          <h2 class="subtitle">About</h2>
+                         <div><img class="footer-logo" src="img/hobby-shop.jpg" alt=""></div> 
+                      </div>
+                  </div>
+                  <div class="copy-right">
+                      <p>Copyright ©2021 mj-design. All rights reserved.</p>
+                  </div>
+              </footer>  
+</body>
+<script src="main.js"></script>
+</html>
