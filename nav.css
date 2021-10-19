@@ -126,10 +126,15 @@ footer{
    
   }
   .menu-list li a{
-    color: #fff !important;
-    pointer-events: none;
+    color: var(--card) !important;
+   
+    
   }
-
+  .menu-list li a:hover{
+    color: var(--button) !important;
+    background-color: var(--main-color);
+    
+  }
   
   .footer-info div{
     margin: 0 auto;
